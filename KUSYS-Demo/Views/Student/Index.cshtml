@@ -39,7 +39,7 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
-                <a itemid="details" data-toggle="modal" data-target="#centermodal" type="submit" onclick="showInPopup('@Url.Action("Details","Student", new {id= item.StudentId})','Details')" asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                <a  data-toggle="modal" data-target="#centermodal" type="submit" onclick="showInPopup('@Url.Action("Details","Student", new {id= item.StudentId})','Details')" asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
                 <a  asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
             </td>
         </tr>

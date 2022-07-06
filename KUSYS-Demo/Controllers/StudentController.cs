@@ -67,7 +67,7 @@ namespace KUSYS_Demo.Controllers
            
             var values = iss.GetStudentById(id);
 
-            return PartialView("StudentDetails",values);
+            return PartialView("Details",values);
         }
 
         public IActionResult Edit(int id)

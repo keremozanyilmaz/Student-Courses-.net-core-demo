@@ -43,7 +43,8 @@ namespace KUSYS_Demo.Services
 
         public Student GetStudentById(int id)
         {
-            return db.Students.FirstOrDefault(c => c.StudentId == id);
+            var student = db.Students.Find(id);
+            return student;
         }
 
         public void UpdateStudent(Student s)
